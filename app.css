@@ -8,11 +8,14 @@ body {
 }
 
 #editor {
-  flex: 1 1 0;
+  flex: 1 1 1px;
+  overflow: auto;
   border: 1px solid gray;
   border-radius: 2px;
-  cursor: text;
   margin-bottom: 4px;
+}
+#editor .CodeMirror-scroll {
+  cursor: text;
 }
 
 #test-url, #client-ip, #result {
