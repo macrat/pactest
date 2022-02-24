@@ -44,6 +44,9 @@
     "directories": {
       "output": "bin"
     },
+    "win": {
+      "target": "zip"
+    },
     "publish": {
       "provider": "github",
       "owner": "macrat",
