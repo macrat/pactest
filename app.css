@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#editor {
+  flex: 1 1 0;
+  border: 1px solid gray;
+  border-radius: 2px;
+  cursor: text;
+  margin-bottom: 4px;
+}
+
+#test-url, #client-ip, #result {
+  display: flex;
+  align-items: center;
+}
+#test-url-input, #client-ip-input, #result-output {
+  flex: 1 1 0;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 4px 6px;
+  margin: 2px 0 2px 8px;
+  min-height: 1em;
+}
+
+#result-output {
+  background-color: #f3f3f3;
+}
+#result-output.error {
+  color: orangered;
+  font-weight: bold;
+  border-color: orangered;
+}
+
+/* vim: set ts=2 sw=2 et : */

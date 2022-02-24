@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>pactest</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'" />
+    <link rel="stylesheet" href="bundle/app.css" />
+  </head>
+  <body>
+    <div id="editor"></div>
+    <label id="test-url">Test URL: <input type="url" id="test-url-input" placeholder="https://..." value="https://example.com" /></label>
+    <label id="client-ip">Client IP: <input id="client-ip-input" placeholder="127.0.0.1" value="127.0.0.1" /></label>
+    <div id="result">Result: <pre id="result-output">DIRECT</pre></div>
+  </body>
+</html>
+
+<!-- vim: set ts=2 sw=2 et : -->
