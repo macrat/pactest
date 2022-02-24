@@ -7,6 +7,8 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/addon/lint/lint.js';
 import 'codemirror/addon/lint/lint.css';
 import 'codemirror/addon/lint/javascript-lint.js';
+import 'codemirror/addon/scroll/simplescrollbars.js';
+import 'codemirror/addon/scroll/simplescrollbars.css';
 
 import { testPacFile } from 'pac-file-tester';
 
@@ -20,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabSize: 2,
     autofocus: true,
     lint: { options: { esversion: 2015 } },
+    scrollbarStyle: 'simple',
     value: `// Paste PAC file here.
 
 function FindProxyForURL(url, host) {
